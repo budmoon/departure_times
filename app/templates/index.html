@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBTA Departure Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      $loading();
+      var northData = [];
+      var southData = [];
+      var locations = [];
+      {% for item in departure_data[0] %}
+        northData.push({{ item.serialize()|tojson|safe }});
+      {% endfor %}
+      {% for item in departure_data[1] %}
+        southData.push({{ item.serialize()|tojson|safe }});
+      {% endfor %}
+      {% for item in departure_data[2] %}
+        locations.push({{ item.serialize()|tojson|safe }});
+      {% endfor %}
+      $render(northData, southData, locations);
+    </script>
+  </body>
+</html>

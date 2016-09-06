@@ -1,0 +1,61 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(249, 123, 6, .1) 25%, rgba(249, 123, 6, .1) 26%, transparent 27%, transparent 74%, rgba(249, 123, 6, .1) 75%, rgba(249, 123, 6, .1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(249, 123, 6, .1) 25%, rgba(249, 123, 6, .1) 26%, transparent 27%, transparent 74%, rgba(249, 123, 6, .1) 75%, rgba(250, 159, 71, .1) 76%, transparent 77%, transparent);
+  background-size: 100px 100px;
+  background-attachment: fixed;
+}
+
+.toggle-buttons {
+  display: inline-block;
+  margin: 10px;
+}
+
+.title {
+  text-align: right;
+}
+
+.logo-container {
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+
+.container {
+  background: #fff;
+  margin: 10px auto;
+  width: 75%;
+  padding: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(125, 62, 3, .1);
+}
+
+th {
+  text-indent: 10px;
+}
+
+td {
+  vertical-align: middle;
+  text-indent: 10px;
+}
+
+td button {
+  display: inline-block;
+  float: right;
+}
+
+.mapCanvas {
+  height: 450px;
+  width: 580px;
+}
+
+.mapCanvas i {
+  font-size: 42px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
