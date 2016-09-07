@@ -64,7 +64,7 @@ window.$render = function(northData, southData, locations) {
             <ModalBody>
               <div className="mapCanvas">
                 {!modalOpen ? null :
-                <GoogleMap bootstrapURLKeys={{key: 'AIzaSyCzBiGr4KvhW4AHY-nSdwdMAghhQ6-Z6j0'}} options={mapOptions} {...modalProps}>
+                <GoogleMap bootstrapURLKeys={{key: '/* GOOGLE_MAP_API_KEY */'}} options={mapOptions} {...modalProps}>
                   <div {...pins[0]}><strong><Glyph icon="pin" size="lg" type="warning" />Station</strong></div>
                   <div {...pins[1]}><strong><Glyph icon="pin" size="lg" type="primary" />Destination</strong></div>
                 </GoogleMap>}
