@@ -242,7 +242,7 @@
 	                function formatDate(input) {
 	                  var date = new Date(input);
 	                  var pm = date.getHours() > 12;
-	                  return (pm ? date.getHours() - 12 : date.getHours()) + ':' + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) + (date.getHours() >= 12 ? ' PM' : ' AM');
+	                  return (date.getHours() == 0 ? '12' : pm ? date.getHours() - 12 : date.getHours()) + ':' + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) + (date.getHours() >= 12 ? ' PM' : ' AM');
 	                }
 	                var openModal = modalToggle.bind(self, item.origin, item.destination);
 	                var deptime = formatDate(item.scheduledtime);

@@ -96,7 +96,7 @@ window.$render = function(northData, southData, locations) {
                   function formatDate(input) {
                     var date = new Date(input);
                     var pm = date.getHours() > 12;
-                    return (pm ? date.getHours() - 12 : date.getHours()) + ':' +
+                    return (date.getHours() == 0 ? '12' : pm ? date.getHours() - 12 : date.getHours()) + ':' +
                            (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) +
                            (date.getHours() >= 12 ? ' PM' : ' AM');
                   }
