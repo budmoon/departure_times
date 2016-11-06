@@ -9,5 +9,3 @@ The departure data is stored in a database table and queried against by SQLAlche
 GPS data is stored in a separate table that gets joined to the departure data asynchronously.
 
 Query results get passed through the Jinja2 templating engine into arrays of Javascript objects that are handled by ReactJS to provide the front end.
-
-Live demo is accessible at http://moon-departures.com
